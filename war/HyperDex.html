@@ -7,12 +7,9 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-
     <link type="text/css" rel="stylesheet" href="HyperDex.css">
 
- 
-    <title>HyperDex</title>
+  
     
     <!--                                           -->
     <!-- This script loads your compiled module.   -->
@@ -21,9 +18,24 @@
     <!--                                           -->
     <script type="text/javascript" language="javascript" src="hyperdex/hyperdex.nocache.js"></script>
   </head>
+  
   <body>
-    <h1>HyperDex</h1>
+      
+    <div id="doc" class="yui-t5">
+    <div id="hd">
+    
+      <img id="logo" src="http://hyperdex.org/images/hd-logo.png" />
+      <h1>
+        <a href="http://hyperdex.org/">
+          <span class="systemname"> HyperDex</span>:  A Searchable Distributed Key-Value Store
+        </a>
+      </h1>
+  </div><!-- hd -->
+  
+    </div><!-- hd -->
     <div id="mainpage"></div>
+    <div id="nav">
+    
     <!-- OPTIONAL: include this if you want history support -->
     <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
     
@@ -32,7 +44,13 @@
       <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
         Your web browser must have JavaScript enabled
         in order for this application to display correctly.
+        
         </div>
     </noscript>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages: ['gauge']});
+    </script>
+    <script type="text/javascript">
   </body>
 </html>

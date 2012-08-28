@@ -1,0 +1,54 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	
+	<ui:style>
+  .detail {
+    border: 1px solid #666;
+    background-color: white;
+  }
+
+  .header {
+    background: #eee;
+    border-bottom: 1px solid #666;
+    padding: 0.5em;
+  }
+
+  .headerItem {
+    margin-bottom:0.5em;
+  }
+
+  .body {
+    line-height: 150%;
+    padding: 20px 40px 20px 10px;
+    font-family: 'Times New Roman', Times, serif;
+   }
+    
+    
+   .table {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+  .table td {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 2px 0 2px 10px;
+  }
+	</ui:style>
+	
+
+	<g:DockLayoutPanel unit='EM' styleName='{style.detail}'>
+    <g:north size='4.1'>
+      <g:HTMLPanel styleName='{style.header}'>
+        <div class='{style.headerItem}'><b>spaceName:</b> <span ui:field='spaceName'/></div>
+      </g:HTMLPanel>
+    </g:north>
+
+    <g:center size="12.8">
+      <g:ScrollPanel>
+		<g:FlexTable ui:field='table' styleName='{style.table}' cellSpacing='0' cellPadding='0'/>  
+		</g:ScrollPanel>    
+    </g:center>
+  </g:DockLayoutPanel>
+</ui:UiBinder> 

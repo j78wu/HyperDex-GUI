@@ -1,0 +1,21 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:hyper="urn:import:com.hyperdex.web.client.view">
+	
+	<g:DockLayoutPanel unit='EM'>
+   
+
+    <g:center>
+      <g:SplitLayoutPanel>
+        <g:north size='200'>
+          <hyper:spaceList ui:field='spaceList' />
+        </g:north>
+
+        <g:center>
+          <hyper:spaceDetail ui:field='spaceDetail' />
+        </g:center>
+      </g:SplitLayoutPanel>
+    </g:center>
+  </g:DockLayoutPanel>
+</ui:UiBinder> 
